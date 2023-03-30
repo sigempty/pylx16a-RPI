@@ -1,0 +1,10 @@
+[Unit]
+Description=Tell me the IP after network is up
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/xinhao/tellMeIp.sh
+
+[Install]
+WantedBy=multi-user.target
